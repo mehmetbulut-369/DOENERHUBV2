@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.hnu.doenerhub.app.DoenerHubGUI">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="13" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="12" left="12" bottom="12" right="12"/>
+    <constraints>
+      <xy x="20" y="20" width="560" height="533"/>
+    </constraints>
+    <properties/>
+    <border type="empty">
+      <size top="12" left="12" bottom="12" right="12"/>
+    </border>
+    <children>
+      <component id="228a2" class="javax.swing.JComboBox" binding="fleischComboBox">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="187" height="34"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="6af37" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="4"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Fleisch:"/>
+        </properties>
+      </component>
+      <component id="6e373" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="44"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="4"/>
+          <text value="Brot:"/>
+        </properties>
+      </component>
+      <component id="2e7da" class="javax.swing.JButton" binding="gesamtpreisAnzeigenButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="187" height="34"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Gesamtpreis anzeigen "/>
+        </properties>
+      </component>
+      <component id="73111" class="javax.swing.JSpinner" binding="anzahlTextField" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="187" height="43"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="16" style="1"/>
+        </properties>
+      </component>
+      <scrollpane id="3d8ac">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="187" height="429"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none" title="Bestellungen"/>
+        <children>
+          <component id="d9c98" class="javax.swing.JTable" binding="orderTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="e71d5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="18" style="1"/>
+          <text value="DönerHub"/>
+        </properties>
+      </component>
+      <grid id="2671a" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title=""/>
+        <children>
+          <component id="9b4b8" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Filter: "/>
+            </properties>
+          </component>
+          <component id="76daf" class="javax.swing.JComboBox" binding="filterFleischComboBox">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e8ca5" class="javax.swing.JButton" binding="resetFilterButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Reset"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="80655" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Anzahl:"/>
+        </properties>
+      </component>
+      <component id="f5401" class="javax.swing.JCheckBox" binding="glutenfreiCheckBox" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="226" height="39"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+          <selected value="false"/>
+          <text value="Glutenfrei"/>
+        </properties>
+      </component>
+      <component id="7d5a7" class="javax.swing.JRadioButton" binding="fladenBrotRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Fladen Brot "/>
+        </properties>
+      </component>
+      <component id="7b661" class="javax.swing.JRadioButton" binding="yufkaRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Yufka "/>
+        </properties>
+      </component>
+      <component id="80e8a" class="javax.swing.JButton" binding="addOrderButton">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="187" height="34"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Zum Warenkorb hinzufügen und speichern"/>
+        </properties>
+      </component>
+      <component id="de10" class="javax.swing.JButton" binding="bestellenButton" default-binding="true">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Bestellen"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
